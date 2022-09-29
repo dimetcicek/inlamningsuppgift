@@ -69,6 +69,10 @@ padding-right: 1.75rem;
         color: var(--color-white);
     }
 
+/* ändrar färgen på rutan som visar hur många föremål i shopping cart */
+.bg-theme {
+    background-color: var(--color-theme);
+}
 
 .section-title {
     padding: 3rem 0;
@@ -201,6 +205,19 @@ padding-right: 1.75rem;
                 .main-menu .links .link i {
                     font-size: var(--font-size-16);
                 }
+            
+            .main-menu .links #cart {
+                position: relative;
+            }
+                .main-menu .links #cart .badge {
+                    background-color: var(--color-theme);
+                    position: absolute;
+                    top: -1.2rem;
+                    left: 0.7rem;
+                }
+                    .main-menu .links #cart:hover .badge {
+                        background-color: var(--color-theme-dark);
+                    }
 
         /* justering av färg, position, storlek på
            browse categories & special offer knapparna
@@ -318,7 +335,6 @@ padding-right: 1.75rem;
 
 
 /* shop by category */
-
 /* sätter upp designen för kategori boxarna */
     .shop-by-category .grid {
         display: grid;
@@ -328,6 +344,7 @@ padding-right: 1.75rem;
     }
 
     .shop-by-category .category-box {
+        position: relative;
         background-color: var(--color-gray-1);
         border-radius: var(--border-radius-small);
         height: 100%;
@@ -335,13 +352,27 @@ padding-right: 1.75rem;
         overflow: hidden;
     }
         .shop-by-category .category-box .category-box-title {
+            position: absolute;
+            left: 0;
+            bottom: 0;
             width: 50%;
             border-radius: 0 var(--border-radius-small) 0 0;
             background-color: var(--color-theme-dark);
             color: var(--color-theme);
             padding: 0.5rem 1rem;
             font-weight: var(--font-weight-medium);
+            height: 38px;
         }
+        /* visar x antal produkter när man hover över en kategori */
+        .shop-by-category .category-box:hover .category-box-title {
+            height: 75px;
+        }
+            .shop-by-category .category-box .category-box-title span {
+                display: block;
+                color: var(--color-white);
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+            }
 
     /* ändrar position för våra kategori boxar */
     #category-box-1 {
