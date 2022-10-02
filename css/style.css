@@ -1418,7 +1418,6 @@ knapparna var klickbara (det var de inte förrän jag lekte med z-index) */
         font-size: var(--font-size-18);
     }
         .contact-info h4 p {
-            padding: 1rem 0;
             max-width: 200px;
             color: var(--color-white);
             font-size: var(--font-size-16);
