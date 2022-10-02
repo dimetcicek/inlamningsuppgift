@@ -56,9 +56,14 @@
                 <div class="logotype">
                     <a href="index.html"><img src="images/Logotype.svg" alt="Kenkata Logotype"></a>
                 </div>
-                <div class="search"></div>
+                <div class="search">
+                    <form id="searchboxForm">
+                        <input id="query" type="text" placeholder="Search products...">
+                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
                 <div class="links">
-                    <a class="link" href="#"><i class="fa-regular fa-user me-2"></i>My Account</a>
+                    <a class="link" href="account.html"><i class="fa-regular fa-user me-2"></i>My Account</a>
                     <a class="link" href="#"><i class="fa-regular fa-heart"></i></a>
                     <a id="shuffle" class="link" href="#">
                         <span class="badge rounded-pill">0</span>
@@ -93,9 +98,6 @@
                     </div>
                 </div>
             </nav>
-        </div>
-        <div class="bottom-border">
-            <p>© Copyright 2022 Kenkata</p>
         </div>
     </header>
 
@@ -557,11 +559,19 @@
                 <h2>SUBSCRIBE <span>NOW</span></h2>
                 <p>Signup for awesome news about our new products and
                 know our special discounts on products.</p>
+                <div class="subscribebox">
+                    <form id="subscribeboxForm">
+                    <input id="subscribe-box" type="text" placeholder="Enter email address">
+                    <button class="btn btn-theme" type="submit">Subscribe</button>
+                    </form>
+                </div>
             </div>
             <div class="gray-box"></div>
         </div>
     </section>
 
+    <!-- min kenkata designmall saknade några grejer mot slutet där, inklusive alla logotyper, jag slängde in några "egna" istället 
+         dessutom känns det som att de är lite "out of place", slutade med att jag hårdkodade det för att få dem i rad och somewhat i mitten-->
     <section class="brands">
         <div class="container">
             <div class="brand-logotypes">
@@ -574,7 +584,7 @@
         </div>
     </section>
 
-
+    <!-- min kenkata designmall saknade kenkata logotypen med vit text, fick göra egen i paint 3D -->
     <section class="contact">
         <div class="container">
             <div class="kenkata-logo">
@@ -628,6 +638,9 @@
         </div>
     </section>
 
+    <div class="bottom-menu">
+        <p>© Copyright 2022 Kenkata</p>
+    </div>
 
 </body>
 </html>
