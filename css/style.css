@@ -185,6 +185,10 @@ padding-right: 1.75rem;
                 margin: 0 0 0 0.3rem;
             }
 
+    .bottom-border {
+        background-color: var(--color-dark);
+        height: 200px;
+    }
 
 /* main-menu */
 
@@ -295,6 +299,17 @@ padding-right: 1.75rem;
                             .main-menu nav .browse-categories button > span i {
                                 font-size: 1.4em;
                             }
+
+                .main-menu .dropdown-menu {
+                    background-color: var(--color-theme);
+                }
+                    .main-menu .dropdown-menu .dropdown-item {
+                        background-color: var(--color-theme);
+                        color: var(--color-white);
+                    }
+                        .main-menu .dropdown-menu .dropdown-item:hover {
+                            color: var(--color-theme-dark);
+                        }
 
             .main-menu nav .special-offer {
                 flex: 7;
@@ -939,6 +954,10 @@ padding-right: 1.75rem;
         }
 
 
+.top-seller {
+    padding: 8rem;
+}       
+        
 .top-seller .grid {
     display: grid;
     gap: 0.8rem;
@@ -1111,3 +1130,255 @@ padding-right: 1.75rem;
     width: 550px;
     top: 30px;
 }
+
+.subscribe-panel {
+    padding: 8rem ;
+    background-color: var(--color-gray-2);
+}
+
+    .subscribe h2{
+        position: relative;
+        bottom: 4rem;
+        font-size: var(--font-size-36);
+        font-weight: var(--font-weight-bold);
+        font-family: var(--font-play);
+    }
+        .subscribe span{
+            color: var(--color-theme);
+        }
+        .subscribe p{
+            position: relative;
+            bottom: 4rem;
+            max-width: 391px;
+        }
+.gray-box {
+    background-color: var(--color-gray-1);
+    float: right;
+    position: relative;
+    width: 540px;
+    height: 385px;
+    bottom: 258px;
+    right: 100px;
+}
+
+.brands .container {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logotypes {
+    overflow: none;
+    padding: 5rem;
+    margin: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-logotypes img {
+    position: relative;
+    left: 100px;
+    height: 200px;
+    bottom: 100px;
+}
+
+#twitch {
+    height: 100px;
+    width: 250px;
+}
+
+#lighton {
+    height: 150px;
+}
+
+#nike {
+    height: 100px;
+}
+
+
+.contact {
+    background-color: #0E153D;
+    border-top: 5px solid var(--color-theme);
+    padding: 3rem;
+    height: 600px;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kenkata-logo img {
+    position: relative;
+    right: 250px;
+    width: 284px;
+}
+
+.kenkata-logo p {
+    max-width: 280px;
+    color: var(--color-white);
+    position: relative;
+    top: 70px;
+    right: 235px;
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-roboto);
+}
+
+.contact-info h1 {
+    position: relative;
+    top: 15px;
+    right: 200px;
+    color: var(--color-theme);
+    font-size: var(--font-size-24);
+}
+    .contact-info h2 {
+        position: relative;
+        top: 70px;
+        right: 200px;
+        color: var(--color-theme);
+        font-size: var(--font-size-18);
+    }
+        .contact-info h2 p {
+            top: 20px;
+            right: 1px;
+            max-width: 240px;
+            color: var(--color-white);
+            font-size: var(--font-size-16);
+        }
+
+    .contact-info h3 {
+        position: relative;
+        top: 120px;
+        right: 200px;
+        color: var(--color-theme);
+        font-size: var(--font-size-18);
+    }
+        .contact-info h3 p {
+            max-width: 200px;
+            color: var(--color-white);
+            font-size: var(--font-size-16);
+        }
+    .contact-info h4 {
+        position: relative;
+        top: 160px;
+        right: 200px;
+        color: var(--color-theme);
+        font-size: var(--font-size-18);
+    }
+        .contact-info h4 p {
+            padding: 1rem 0;
+            max-width: 200px;
+            color: var(--color-white);
+            font-size: var(--font-size-16);
+        }
+
+    .useful-links h1 {
+    position: relative;
+    top: 15px;
+    right: 150px;
+    color: var(--color-theme);
+    font-size: var(--font-size-24);
+    }
+
+    .useful-links a {
+        display: block;
+        position: relative;
+        top: 50px;
+        padding: 1rem;
+        right: 150px;
+        color: var(--color-white);
+        text-decoration: none;
+    }
+        .useful-links a:hover {
+            color: var(--color-theme);
+            text-decoration: underline;
+        }
+
+.recent-instagram h1 {
+    position: relative;
+    top: 15px;
+    right: 5px;
+    color: var(--color-theme);
+    font-size: var(--font-size-24);
+}
+
+.insta-grid {
+    display: grid;
+    position: relative;
+    top: 80px;
+    right: 20px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    background-color: var(--color-theme-dark);
+    gap: 1rem;
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-between;
+}
+
+    #insta-box-1 {
+        background-color: var(--color-gray-0);
+        border-radius: 10px;
+    }
+        #insta-box-1:hover {
+            background-color: var(--color-theme);
+        }
+    #insta-box-2 {
+        background-color: var(--color-gray-0);
+        border-radius: 10px;
+    }
+        #insta-box-2:hover {
+            background-color: var(--color-theme);
+        }
+    #insta-box-3 {
+        background-color: var(--color-gray-0);
+        border-radius: 10px;
+    }
+        #insta-box-3:hover {
+            background-color: var(--color-theme);
+        }
+    #insta-box-4 {
+        background-color: var(--color-gray-0);
+        border-radius: 10px;
+    }
+        #insta-box-4:hover {
+            background-color: var(--color-theme);
+        }
+    #insta-box-5 {
+        background-color: var(--color-gray-0);
+        border-radius: 10px;
+    }   
+        #insta-box-5:hover {
+            background-color: var(--color-theme);
+        }   
+    #insta-box-6 {
+        background-color: var(--color-gray-0);
+        border-radius: 10px;
+    }
+        #insta-box-6:hover {
+            background-color: var(--color-theme);
+        }
+    #insta-box-7 {
+        background-color: var(--color-gray-0);
+        border-radius: 10px;
+    }
+        #insta-box-7:hover {
+            background-color: var(--color-theme);
+        }
+    #insta-box-8 {
+        background-color: var(--color-gray-0);
+        border-radius: 10px;
+    }
+        #insta-box-8:hover {
+            background-color: var(--color-theme);
+        }
+    #insta-box-9 {
+        background-color: var(--color-gray-0);
+        border-radius: 10px;
+    }
+        #insta-box-9:hover {
+            background-color: var(--color-theme);
+        }
+
+/* post skicka spara, hantera känslig info
+    sökning = get */
